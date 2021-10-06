@@ -36,10 +36,10 @@ class _ListviewState extends State<Listview> {
           scrollDirection: Axis.vertical,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(4.0),
               child: Container(
                 height: 100,
-                  width: 100,
+                  width: 50,
                   color: Colors.red,
               ),
             ),
