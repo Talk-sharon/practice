@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
-import 'Screens/ItemScreen.dart';
-import 'Screens/pages/home_page.dart';
+
+import 'screens/pages/home_page.dart';
+
 void main() {
-  runApp(ListWorks());
+  runApp(const MyApp());
 }
 
-class ListWorks extends StatelessWidget {
-  const ListWorks({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Listview(),
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const MyHomePage(),
     );
   }
 }
-
-
-
